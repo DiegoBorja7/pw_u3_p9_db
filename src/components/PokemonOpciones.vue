@@ -3,7 +3,7 @@
         <h1>Opciones</h1>
         <ul>
             <li v-on:click="pasarPadre(pokemon.id)" v-for="pokemon in listaPokemons" :key="pokemon.id">{{ pokemon.nombre
-                }}</li>
+            }}</li>
         </ul>
     </div>
 </template>
@@ -24,7 +24,7 @@ export default {
     }
 }
 </script>
-<style>
+<style scoped>
 .pokemon-opciones {
     display: flex;
     flex-direction: column;

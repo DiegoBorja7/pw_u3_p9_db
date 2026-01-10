@@ -38,7 +38,7 @@ export default {
     },
 }
 </script>
-<style>
+<style scoped>
 .pokemon-imagen {
     display: flex;
     flex-direction: column;

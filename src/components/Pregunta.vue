@@ -51,7 +51,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 img {
     width: 100vw;
     height: 100vh;
@@ -60,13 +60,12 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -1;
 }
 
 .pregunta-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin-top: 2rem;
     z-index: 2;
     text-align: center;
     color: white;

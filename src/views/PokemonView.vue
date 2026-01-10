@@ -117,7 +117,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .pokemon-view {
     width: min(860px, 100%);
     display: flex;

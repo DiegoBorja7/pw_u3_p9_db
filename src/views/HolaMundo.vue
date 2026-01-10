@@ -1,10 +1,28 @@
 <template>
-    <h3>Hola Mundo cabrones</h3>
+    <h3>Hola cabrones</h3>
+    <p>Consultando los datos del estudiante /{{ idEstudiante }}</p>
+    <button @click="identificarID">Identificar ID</button>
 </template>
 
 <script>
 export default {
-    name: 'HolaMundo'
+    name: 'HolaMundo',
+    data() {
+        return {
+            idEstudiante: null,
+        }
+    },
+    created() {
+        console.log(this.$route);
+        console.log(this.$route.query);
+
+    },
+    methods: {
+        identificarID() {
+            this.idEstudiante = this.$route.params.id;
+        }
+    }
+
 }
 </script>
 

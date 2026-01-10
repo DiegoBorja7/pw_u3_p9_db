@@ -16,10 +16,4 @@ module.exports = defineConfig({
       },
     },
   },
-  chainWebpack: (config) => {
-    config.plugin("html").tap((args) => {
-      args[0].title = "Taller 22 - Router Vue";
-      return args;
-    });
-  },
 });

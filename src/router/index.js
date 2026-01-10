@@ -19,7 +19,7 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
-    path: "/hola-mundo",
+    path: "/hola-mundo/:id?",
     name: "hola-mundo",
     component: HolaMundo,
   },
